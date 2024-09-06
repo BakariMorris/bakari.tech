@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import Nav from '@/components//Nav/Nav';
+import Nav from '@/components/Nav';
 
 const Header = () => {
   return (
