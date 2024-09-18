@@ -15,7 +15,7 @@ export default function Home() {
             <h1 className='h1'>Hello I'm <br />
               <span className='text-accent'>Bakari Morris</span>
             </h1>
-            <p className='max-w-[500px] mb-9 text-white/80'>I excel at creating an engaging user experience.  </p>
+            <p className='max-w-[500px] mb-9 text-white/80'>I excel at creating an engaging user experience. I create because I love to. I let my code speak for itself, feel free to check out the Github!</p>
 
             <div className="mb-8 xl:mb-0 mt-3 flex gap-6 items-center lg:justify-start md:justify-center">
               <Button
