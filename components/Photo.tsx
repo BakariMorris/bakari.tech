@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Photo = () => {
   return (
-    <div className="w-full h-full relative">
+    <div className="relative">
       <motion.div 
         initial={{opacity: 0}}
         animate={{opacity: 1, transition: {delay: 2, duration: 0.4, ease: 'easeIn'},
@@ -14,10 +14,10 @@ const Photo = () => {
         animate={{opacity: 1, transition: {delay: 2.4, duration: 0.4, ease: 'easeInOut'},
       }} 
       className='w-[298px] h-[298px]] xl:w-[498px] xl:h-[498px] absolute'>
-          <img src='/assets/profile.png' alt='profile picture man in suit' className='object-contain relative'/>
+          <img src='/assets/profile.png' alt='profile picture man in suit' className='object-contain relative z-[-1]'/>
         </motion.div>
 
-        <motion.svg className='w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]' fill='transparent'
+        <motion.svg className='w-[300px] xl:w-[506px] h-[300px] xl:h-[506px] z-10' fill='transparent'
         viewBox='0 0 506 506'
         xmlns='http://www.w3.org/2000/svg'>
           <motion.circle 
