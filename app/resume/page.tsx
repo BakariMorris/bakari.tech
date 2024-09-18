@@ -37,7 +37,7 @@ const about: I_about = {
     },
     {
       fieldName: 'Phone',
-      fieldValue: '(+1)917-409-6431'
+      fieldValue: '(+1) 917-409-6431'
     },
     {
       fieldName: 'Experience',
