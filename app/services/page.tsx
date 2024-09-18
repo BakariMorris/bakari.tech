@@ -51,7 +51,7 @@ const Services = (props: IServiceProps) => {
         }
       }}
       className='grid grid-cols-1 md:grid-cols-2 gap-[60px]'>
-        {services.map((service, index) => {
+      {services.map((service, index) => {
           return <div key={index} className='flex-1 flex flex-col justify-center gap-6 group'>
             <div className='w-full flex justify-between items-center'>
               <div className='text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500'>{service.num}</div>
