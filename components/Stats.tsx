@@ -13,11 +13,11 @@ const stats: Array<Istats> = [
     description: 'Years of experience'
   },
   {
-    val: 10,
+    val: 50,
     description: 'Projects completed'
   },
   {
-    val: 6,
+    val: 8,
     description: 'Technologies mastered'
   }
 ]

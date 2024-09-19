@@ -1,6 +1,6 @@
 import {ReactNode} from 'react';
 import Link from "next/link";
-import {FaGithub, FaLinkedinIn, FaYoutube} from 'react-icons/fa';
+import {FaGithub, FaGoogle, FaLinkedinIn, FaYoutube} from 'react-icons/fa';
 import { Button } from './ui/button';
 
 interface ISocialLink {
@@ -16,7 +16,7 @@ interface ISocialPropTypes {
 const socials: Array<ISocialLink> = [
   {icon: <FaGithub />, path: 'https://github.com/BakariMorris?tab=repositories'},
   {icon: <FaLinkedinIn />, path: 'https://www.linkedin.com/in/bakari-morris/'},
-  {icon: <FaYoutube />, path: ''},
+  {icon: <FaGoogle />, path: 'mailto:bakari.morris@gmail.com, bakari.morris@gmail.com'},
 ]
 
 

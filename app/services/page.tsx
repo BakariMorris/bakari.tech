@@ -18,23 +18,23 @@ const services:Array<IServices> = [
   {
     num: '01',
     title: 'Web Development',
-    description: "I've been doing this a long time, I made my first website when I was 12 years old and have a good eye for great design & common pitfalls in software engineering. Click on the link above to see some of the work I have completed.",
+    description: "With years of experience that started when I built my first website at 12, I’ve developed a good eye for exceptional design and a strong user-first approach. If you're seeking someone who can take your project from concept to completion with little direction, I'm your go-to expert.",
     href: '/work'
   }, {
     num: '02',
     title: 'UI/UX Design',
-    description: "I'm very comfortable opening up Figma getting inspired and working on something that really inspires me! I have designed many websites over the years and most recently ideate with myself & my co-founder.",
+    description: "I thrive in collaborative environments, diving into Figma to create designs that inspire. With extensive experience in designing websites and partnering closely with designers and product teams, I’m skilled at transforming ideas into user-centric products that captivate and delight.",
     href: '/work'
   }, {
     num: '03',
     title: 'Technical Leadership',
-    description: "I love understanding how to lead engineering teams. I love great literature on the topic & have worked to the goals between product and my engineering teams.",
-    href: ''
+    description: "I'm passionate about simply making my team better! I enjoy studying servant leadership and seeing the tangible impact of strong mentorship. My focus is on aligning product and engineering goals in every project, ensuring we work on the most impactful areas. By fostering meaningful collaboration, I believe we can deliver high-quality solutions quickly, all while maintaining a strong commitment to engineering excellence.",
+    href: 'https://www.notion.so/Technical-Debt-3c96ba40d2ce439ab7ff46293d6e9a7c'
   }, {
     num: '04',
     title: 'Systems Design',
-    description: 'Something about being excellent at designing efficient, high availability systems. I love working on the back and front end , check out the literature!',
-    href: ''
+    description: 'My experience extends well beyond theoretical interview conversations. I’ve designed and implemented large-scale, distributed systems for both my own company and major enterprises. I take pride in building reliable, high-performance systems that can scale to support millions of users. Whether working in the cloud, on local hardware, or hybrid systems, I deliver efficient solutions that delights users.',
+    href: '/work'
   },
 ]
 

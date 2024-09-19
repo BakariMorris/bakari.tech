@@ -27,35 +27,35 @@ interface I_projects {
 const projects: Array<I_projects> = [
   {
     num: '01',
-    category: 'frontend',
+    category: 'WeWork',
     title: 'project1',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
-    image: '/assets profile.png',
-    portfolioLink: 'https://google.com',
+    description: 'I led a team to make improvements for the component library. Resulted in a 13% customer satisfaction improvement in 6 months.',
+    image: '/assets/WeWork.gif',
+    portfolioLink: 'https://www.wework.com/',
     stack: [
-      'Html 5, CSS 3', 'TypeScript', 'TailwindCSS'
+      'Html5, CSS3', 'React', 'TypeScript', 'Kubernetes'
     ]
   },{
     num: '02',
-    category: 'frontend',
+    category: 'Nike',
     title: 'project1',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
-    image: '/assets profile.png',
-    portfolioLink: 'https://google.com',
+    description: 'Optimized an efficient browser based 3D rendering engine. Created a 15% increase in add to cart rate across Nike By You products.',
+    image: '/assets/Nike.gif',
+    portfolioLink: 'https://www.nike.com/u/custom-nike-air-max-97-shoes-by-you-10001609/1726768359135',
     stack: [
-      'Html 5, CSS 3', 'TypeScript', 'TailwindCSS'
+      'Html5', 'CSS3', 'TypeScript', 'AWS', 'Babylon.js', '3D Animation Design'
     ]
   },{
     num: '03',
-    category: 'frontend',
-    title: 'project1',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
-    image: '/assets profile.png',
-    portfolioLink: 'https://google.com',
+    category: 'Aretove',
+    title: 'Tommy John',
+    description: 'Led the A/B testing efforts for Tommy John. Increasing add to cart rate by 23%.',
+    image: '/assets/TJ.gif',
+    portfolioLink: 'https://www.tommyjohn.com/',
     stack: [
-      'Html 5, CSS 3', 'TypeScript', 'TailwindCSS'
+      'Html5', 'CSS3', 'React', 'JavaScript', 'Shopify', 'Dynamic YIeld'
     ]
-  },
+  }
 ]
 
 const work = () => {
@@ -70,7 +70,7 @@ const work = () => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 , transition: {delay: 2.4, duration: 0.4, ease: 'easeIn'}}}
-      className='min-h-[80vh] flex flex-col justify-center pu-12 xl:px-0'
+      className='min-h-[80vh] flex flex-col justify-center pu-12 lg:px-5'
     >
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row xl:gap-[30px]'>
@@ -82,9 +82,9 @@ const work = () => {
                 <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>
                   {project.num}
                 </div>
-                <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>{project.category} project</h2>
+                <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>{project.category}</h2>
                 <p className='text-white/60'>{project.description}</p>
-                <ul className='flex gap-4'>
+                <ul className='flex flex-wrap gap-4'>
                   {project.stack.map((item, index) => (
                     <li className='text-xl text-accent' key={index}>
                       {item}
@@ -95,7 +95,7 @@ const work = () => {
 
                 <div className='border border-white/20'></div>
                 <div>
-                  <Link href={project.portfolioLink}>
+                  <Link target='blank' href={project.portfolioLink}>
                     <TooltipProvider>
                       <Tooltip>
                         <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
