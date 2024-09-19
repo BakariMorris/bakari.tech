@@ -14,7 +14,7 @@ const Photo = () => {
         animate={{opacity: 1, transition: {delay: 2.4, duration: 0.4, ease: 'easeInOut'},
       }} 
       className='w-[298px] h-[298px]] xl:w-[498px] xl:h-[498px] absolute'>
-          <img src='/assets/profile.png' alt='profile picture man in suit' className='object-contain relative z-[-1]'/>
+          <img src='/assets/profile.png' alt='profile picture man in suit' className='object-contain relative z-[-1] mix-blend-lighten'/>
         </motion.div>
 
         <motion.svg className='w-[300px] xl:w-[506px] h-[300px] xl:h-[506px] z-10' fill='transparent'

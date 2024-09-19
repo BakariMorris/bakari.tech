@@ -3,6 +3,7 @@
 import { BsArrowDownRight } from 'react-icons/bs';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import StoryNav from '@/components/StoryNav';
 export interface IServiceProps {
 }
 
@@ -17,22 +18,22 @@ const services:Array<IServices> = [
   {
     num: '01',
     title: 'Web Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus laudantium praesentium porro, ratione, qui impedit asperiores in quaerat dignissimos!',
-    href: ''
+    description: "I've been doing this a long time, I made my first website when I was 12 years old and have a good eye for great design & common pitfalls in software engineering. Click on the link above to see some of the work I have completed.",
+    href: '/work'
   }, {
     num: '02',
     title: 'UI/UX Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus laudantium praesentium porro, ratione, qui impedit asperiores in quaerat dignissimos!',
-    href: ''
+    description: "I'm very comfortable opening up Figma getting inspired and working on something that really inspires me! I have designed many websites over the years and most recently ideate with myself & my co-founder.",
+    href: '/work'
   }, {
     num: '03',
-    title: 'Logo Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus laudantium praesentium porro, ratione, qui impedit asperiores in quaerat dignissimos!',
+    title: 'Technical Leadership',
+    description: "I love understanding how to lead engineering teams. I love great literature on the topic & have worked to the goals between product and my engineering teams.",
     href: ''
   }, {
     num: '04',
-    title: 'Being Great',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus laudantium praesentium porro, ratione, qui impedit asperiores in quaerat dignissimos!',
+    title: 'Systems Design',
+    description: 'Something about being excellent at designing efficient, high availability systems. I love working on the back and front end , check out the literature!',
     href: ''
   },
 ]
@@ -41,9 +42,8 @@ const services:Array<IServices> = [
 
 const Services = (props: IServiceProps) => {
   return (
-    <section className='min-h-[80vh] flex flex-col justify-center py-12 xl:py-0'>
-      Services Page
-
+    <>
+    <section className='min-h-[80vh] px-10 flex flex-col justify-center py-12 xl:py-0'>
       <motion.div initial={{opacity: 0}} animate={{
         opacity: 1,
         transition: {
@@ -65,7 +65,12 @@ const Services = (props: IServiceProps) => {
           </div>
         })}
       </motion.div>
+      
     </section>
+    <StoryNav
+      nextLink="/resume"
+      />
+    </>
   );
 }
 

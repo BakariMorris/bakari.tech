@@ -14,6 +14,7 @@ import {
 
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { motion } from 'framer-motion';
+import StoryNav from '@/components/StoryNav';
 
 
 interface I_info {
@@ -190,6 +191,7 @@ const skills = {
 
 const Resume = () => {
   return (
+    <>
     <motion.div
       initial={{ opacity: 0 }}
       animate={{
@@ -288,6 +290,11 @@ const Resume = () => {
         </div>
       </Tabs>
     </motion.div>
+    <StoryNav
+      nextLink="/work"
+      buttonStyling=''
+      />
+    </>
   )
 }
 

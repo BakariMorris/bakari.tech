@@ -25,7 +25,7 @@ const stats: Array<Istats> = [
 const Stats = () => {
   return (
     <section className='pt-4 pb-12  xl:pb-0'>
-      <div className="container mx-auto">
+      <div className="container mx-auto sm:px-[68px] md:px-0">
         <div className="flex flex-wrap gap-6 max-w-[80vw] xl:max-w-none">
           {stats.map((item, index) => (
             <div className="flex-1 flex gap4 items-center justify-center xl:justify-start" key={index}>

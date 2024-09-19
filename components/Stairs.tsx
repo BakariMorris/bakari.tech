@@ -21,7 +21,7 @@ const reverseIndex = (index: number) => {
 
 
 {/* rendering 6 motion steps here representing a set of stairs Each div has the sme animation defined above
-    The delayfor each div is calulated dynamically based on it's reversed index
+    The delay for each div is calculated dynamically based on it's reversed index
     Creating a staggered effect with deceasing delay for every step after */}
 const Stairs = () => {
   return (
@@ -38,7 +38,7 @@ const Stairs = () => {
             ease: 'easeInOut',
             delay: reverseIndex(index) * 0.1,
           }}
-          className='h-full w-full bg-white relative'
+          className='h-full w-full bg-[#414141ce] relative'
         />
       ))}
     </>
