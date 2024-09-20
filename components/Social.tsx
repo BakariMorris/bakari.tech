@@ -1,7 +1,6 @@
 import {ReactNode} from 'react';
 import Link from "next/link";
-import {FaGithub, FaGoogle, FaLinkedinIn, FaYoutube} from 'react-icons/fa';
-import { Button } from './ui/button';
+import {FaGithub, FaGoogle, FaLinkedinIn} from 'react-icons/fa';
 
 interface ISocialLink {
   icon: ReactNode,

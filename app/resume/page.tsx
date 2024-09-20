@@ -1,6 +1,5 @@
 'use client';
 
-import { Description } from '@radix-ui/react-dialog';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs } from 'react-icons/si';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -15,6 +14,7 @@ import {
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { motion } from 'framer-motion';
 import StoryNav from '@/components/StoryNav';
+import { ReactNode } from 'react';
 
 
 interface I_info {
@@ -46,7 +46,7 @@ const about: I_about = {
     },
     {
       fieldName: 'LinkedIn',
-      fieldValue: 'https://www.linkedin.com/in/bakari-morris'
+      fieldValue: 'linkedin.com/in/bakari-morris'
     },
     {
       fieldName: 'Email',
@@ -154,13 +154,13 @@ interface I_skills {
 }
 
 interface I_skillsList {
-  icon: string,
+  icon: ReactNode,
   name: string
 }
 
-const skills = {
+const skills:I_skills = {
   title: 'My skills',
-  description: `I love JavaScript & web technologies. I use plenty of other tech from LLMs to Web3 in personal projects. If you know about a really cool tool I'd love to hear why you enjoy it!`,
+  description: `I love JavaScript & web technologies. I use plenty of other tech from LLMs to Web3 in personal projects. If you know about a really cool tool I'd love to hear about it!`,
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -223,7 +223,7 @@ const Resume = () => {
             <TabsContent value='experience' className='w-full'>
               <div className='flex flex-col gap-[30px] text-center xl:text-left'>
                 <h3 className='text-4xl font-bold'>{experience.title}</h3>
-                <p>{experience.description}</p>
+                <p className='px-4 md:px-0'>{experience.description}</p>
                 <ScrollArea className='h-[400px]'>
                   <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
                     {experience.items.map((item, index) => (
@@ -264,7 +264,7 @@ const Resume = () => {
               <div className='flex flex-col gap-[30px]'>
                 <div className='flex flex-col gap-[30px] text-center xl:text-left'>
                   <h3 className='text-4xl font-bold'>{skills.title}</h3>
-                  <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{skills.description}</p>
+                  <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0 px-4 md:px-0'>{skills.description}</p>
                 </div>
                 <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4'>
                   {skills.skillList.map((skill, index) => (
@@ -287,7 +287,7 @@ const Resume = () => {
             <TabsContent value='about' className='w-full text-center xl:text-left'>
               <div className='flex flex-col gap-[30px]'>
                 <h3 className='text-4xl font-bold'>{about.title}</h3>
-                <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{about.description}</p>
+                <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0 px-4 md:px-0'>{about.description}</p>
                 <ul className='grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-w[620px] mx-auto xl:mx-0'>
                   {about.info.map((item, index) => (
                     <li key={index} className='flex items-center justify0center xl:justify-start gap-4'>

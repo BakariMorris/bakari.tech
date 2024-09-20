@@ -19,9 +19,11 @@ const StoryNav = (props: I_props) => {
   return (
     <>
       {<Link
-        href={nextLink}>
+        href={nextLink}
+        
+        className={`${buttonStyling} relative z-[-1] text-center flex justify-center mb-2`}>
         <Button
-          className={`${buttonStyling} relative z-[-1] text-center ml-[48%] mb-2`}>
+          >
           {(nextIcon) ? nextIcon : <BsArrowDown />}
           </Button>
       </Link>}

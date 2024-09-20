@@ -11,20 +11,20 @@ export default function Home() {
   return (
     <section className="h-full mt-10">
       <div className="container mx-auto h-full flex flex-col lg:flex-row lg:justify-between sm:justify-end xl:pb-8">
-        <div className="flex flex-col xl:flex-row items-center  xl:pt-8 xl:pb-24 order-2 lg:order-none pr-10">
-          <div className='text-center md:text-left  order-2 xl:order-none'>
-            <span>Founding Software Engineer</span>
-            <h1 className='h1'>Hello I'm <br />
+        <div className="flex flex-col xl:flex-row items-center  xl:pt-8 xl:pb-24 order-2 lg:order-none lg:pr-10">
+          <div className='text-center flex flex-col md:text-left  order-2 xl:order-none'>
+            <span className="order-2 md:order-1">Founding Software Engineer</span>
+            <h1 className='h1 mx-2 md:mx-0 order-1 md:order-2'>Hello I&apos;m <br />
               <span className='text-accent'>Bakari Morris</span>
             </h1>
-            <p className='max-w-[500px] mb-9 text-white/80'>I’m passionate about crafting seamless and engaging user experiences. Every line of code I write is driven by a love for innovation and design. Please explore my work on this site & GitHub—where my code speaks for itself.</p>
+            <p className=' mt-8 md:mt-0 mx-8 md:mx-0 max-w-[500px] order-3 mb-9 text-white/80'>I’m passionate about crafting seamless and engaging user experiences. Every line of code I write is driven by a love for innovation and design. Please explore my work on this site & GitHub—where my code speaks for itself.</p>
 
-            <div className="mb-8 xl:mb-0 mt-3 flex gap-6 items-center lg:justify-start md:justify-center">
+            <div className="mb-8 md:px-0 order-4 xl:mb-0 mt-3 flex flex-col md:flex-row gap-3 md:gap-6 items-center lg:justify-start md:justify-center">
               <Link href='/contact'>
                 <Button
                   variant='outline'
                   size='lg'
-                  className="uppercase flex items-center gap-2"
+                  className="uppercase flex items-center gap-2 mb-3 md:mb-0"
                 >
                   <span>Contact Me</span>
                   <FiArrowRight className="text-xl"></FiArrowRight>
@@ -44,7 +44,7 @@ export default function Home() {
       <Stats />
       <StoryNav 
         nextLink="/services"
-        buttonStyling='mt-32'
+        buttonStyling='lg:mt-32'
       />
     </section>
   );

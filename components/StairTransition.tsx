@@ -1,14 +1,12 @@
 'use client';
 
 import React from 'react';
-import { AnimatePresence, animate, motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import Stairs from './Stairs';
 
-interface IPageProps {
-}
 
-const StairTransition = (props: IPageProps) => {
+const StairTransition = () => {
   const pathName = usePathname();
   return (
     <>

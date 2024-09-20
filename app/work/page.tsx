@@ -1,12 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import React, { useState } from 'react';
+import React, { ReactNode, useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper as SwiperTypes }  from 'swiper/types';
 import 'swiper/css';
 
-import { BsArrowUpRight, BsGithub } from 'react-icons/bs';
+import { BsArrowUpRight } from 'react-icons/bs';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@radix-ui/react-tooltip';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -33,7 +34,7 @@ const projects: Array<I_projects> = [
     image: '/assets/WeWork.gif',
     portfolioLink: 'https://www.wework.com/',
     stack: [
-      'Html5, CSS3', 'React', 'TypeScript', 'Kubernetes'
+      'Html5, CSS3', 'React', 'TypeScript', 'GCP', 'Kubernetes'
     ]
   },{
     num: '02',
@@ -58,10 +59,10 @@ const projects: Array<I_projects> = [
   }
 ]
 
-const work = () => {
+const Work = ():ReactNode => {
   const [project, setProject] = useState(projects[0]);
 
-  const handleSlideChange = (swiper) => {
+  const handleSlideChange = (swiper:SwiperTypes ) => {
     // Get current slide index
     const currentIndex = swiper.activeIndex;
     setProject(projects[currentIndex])
@@ -145,4 +146,4 @@ const work = () => {
   )
 }
 
-export default work;
+export default Work;

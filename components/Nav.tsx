@@ -32,10 +32,7 @@ const links: Array<NavLink> = [
 
 ]
 
-interface INavProps {
-}
-
-const Nav: React.FunctionComponent<INavProps> = (props) => {
+const Nav: React.FunctionComponent = () => {
 
     const pathName = usePathname();
   return (

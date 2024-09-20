@@ -4,8 +4,6 @@ import { BsArrowDownRight } from 'react-icons/bs';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import StoryNav from '@/components/StoryNav';
-export interface IServiceProps {
-}
 
 interface IServices {
   num: string,
@@ -40,7 +38,7 @@ const services:Array<IServices> = [
 
 
 
-const Services = (props: IServiceProps) => {
+const Services = () => {
   return (
     <>
     <section className='min-h-[80vh] px-10 flex flex-col justify-center py-12 xl:py-0'>
