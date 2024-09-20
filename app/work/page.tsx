@@ -30,8 +30,8 @@ const projects: Array<I_projects> = [
     num: '01',
     category: 'WeWork',
     title: 'project1',
-    description: 'I led a team to make improvements for the component library. Resulted in a 13% customer satisfaction improvement in 6 months.',
-    image: '/assets/WeWork.gif',
+    description: 'I had the awesome opportunity to lead a talented team in revamping our component library, and the results speak for themselves! In just six months, we saw a 13% boost in customer satisfaction. It was a great experience seeing how our improvements made a real difference for users.',
+    image: '/assets/WeWork.png',
     portfolioLink: 'https://www.wework.com/',
     stack: [
       'Html5, CSS3', 'React', 'TypeScript', 'GCP', 'Kubernetes'
@@ -40,8 +40,8 @@ const projects: Array<I_projects> = [
     num: '02',
     category: 'Nike',
     title: 'project1',
-    description: 'Optimized an efficient browser based 3D rendering engine. Created a 15% increase in add to cart rate across Nike By You products.',
-    image: '/assets/Nike.gif',
+    description: `I had the pleasure of optimizing a browser-based 3D rendering engine, which made a real impact! We saw a 15% jump in the 'add to cart' rate for Nike By You products. It was great to see how the improved experience got users more excited to customize and purchase their designs.`,
+    image: '/assets/Nike.png',
     portfolioLink: 'https://www.nike.com/u/custom-nike-air-max-97-shoes-by-you-10001609/1726768359135',
     stack: [
       'Html5', 'CSS3', 'TypeScript', 'AWS', 'Babylon.js', '3D Animation Design'
@@ -50,11 +50,11 @@ const projects: Array<I_projects> = [
     num: '03',
     category: 'Aretove',
     title: 'Tommy John',
-    description: 'Led the A/B testing efforts for Tommy John. Increasing add to cart rate by 23%.',
-    image: '/assets/TJ.gif',
+    description: `I had the pleasure of leading the A/B testing efforts at Tommy John, and the results were amazing! We boosted the 'add to cart' rate by 23%, helping more customers find exactly what they wanted. It was a fun challenge, and seeing that kind of impact made all the hard work worth it!`,
+    image: '/assets/TJ.png',
     portfolioLink: 'https://www.tommyjohn.com/',
     stack: [
-      'Html5', 'CSS3', 'React', 'JavaScript', 'Shopify', 'Dynamic YIeld'
+      'Html5', 'CSS3', 'React', 'JavaScript', 'Shopify', 'Dynamic Yield'
     ]
   }
 ]
@@ -132,7 +132,7 @@ const Work = ():ReactNode => {
                   <div className='h-[460px] relative gorup flex justify-center items-center bg-pink-50/20'>
                     <div className='absolute top-0 bottom-0 w-full h-full bg-black/10 z-10'></div>
                     <div className='relative w-full h-full'>
-                      <Image src={project.image} fill className='object-cover' alt=''></Image>
+                      <Image src={project.image} fill className='object-cover mix-blend-lighten' alt=''></Image>
                     </div>
                   </div>
                 </SwiperSlide>
