@@ -241,7 +241,7 @@ const Resume = () => {
               </div>
             </TabsContent>
             <TabsContent value='education' className='w-full'>
-              <div className='flex flex-col gap-[30px] text-center xl:text-left'>
+              <div className='flex flex-col gap-[30px] text-center lg:pt-8 xl:text-left'>
                 <h3 className='text-4xl font-bold'>{education.title}</h3>
                 <p>{education.description}</p>
                 <ScrollArea className='h-[400px]'>
