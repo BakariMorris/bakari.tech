@@ -17,19 +17,19 @@ const links: Array<NavLink> = [
   },
   {
     name: 'services',
-    path: '/services'
+    path: '/services.html'
   }
   , {
     name: 'resume',
-    path: '/resume',
+    path: '/resume.html',
   },
   {
     name: 'work',
-    path: '/work'
+    path: '/work.html'
   },
   {
     name: 'contact',
-    path: '/contact'
+    path: '/contact.html'
   }
 ]
 
@@ -46,14 +46,14 @@ const MobileNav = () => {
         <div className='flex justify-center h-full items-center'>
           <nav className='flex flex-col justify-center items-center gap-8'>
             {links.map((link, index) => (
-              <Link
-                href={link.path}
-                key={index}
-                className={`
+                <Link
+                  href={link.path}
+                  key={index}
+                  className={`
             ${link.path === pathName && 'text-accent border-b-2 border-accent'}
             text-xl capitalize hover:text-accent transition-all`}>
-                {link.name}
-              </Link>
+                  {link.name}
+                </Link>
             ))}
           </nav>
         </div>

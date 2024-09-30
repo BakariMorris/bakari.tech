@@ -12,6 +12,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@radix
 import Link from 'next/link';
 import Image from 'next/image';
 import WorkSliderBtns from '@/components/WorkSliderBtns';
+import StoryNav from '@/components/StoryNav';
 
 interface I_projects {
   num: string,
@@ -142,6 +143,10 @@ const Work = ():ReactNode => {
           </div>
         </div>
       </div>
+    <StoryNav
+    nextLink="/contact.html"
+    buttonStyling='lg:mt-32'
+    />
     </motion.section>
   )
 }

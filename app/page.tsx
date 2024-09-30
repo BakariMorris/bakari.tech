@@ -9,6 +9,7 @@ import { FiArrowRight } from 'react-icons/fi';
 
 export default function Home() {
   return (
+    <>
     <section className="h-full mt-10">
       <div className="container mx-auto h-full flex flex-col lg:flex-row lg:justify-between sm:justify-end xl:pb-8">
         <div className="flex flex-col xl:flex-row items-center  xl:pt-8 xl:pb-24 order-2 lg:order-none lg:pr-10">
@@ -42,10 +43,12 @@ export default function Home() {
         </div>
       </div>
       <Stats />
-      <StoryNav 
-        nextLink="/services"
-        buttonStyling='lg:mt-32'
-      />
     </section>
+    
+    <StoryNav 
+    nextLink="/services.html"
+    buttonStyling='lg:mt-32'
+  />
+  </>
   );
 }

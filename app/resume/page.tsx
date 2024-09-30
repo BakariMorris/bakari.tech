@@ -209,7 +209,7 @@ const Resume = () => {
           opacity: 1,
           transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
         }}
-        className='min-h-[80vh] container flex items-center justify-center py-12 xl:py-0'
+        className='min-h-[80vh] container flex items-center justify-center py-12'
       >
         <Tabs defaultValue='experience' className='flex flex-col xl:flex-row gap-[60px]'>
           <TabsList className='flex flex-col w-full max-w-[300px] mx-auto xl:mx-0 gap-6'>
@@ -299,7 +299,7 @@ const Resume = () => {
               </div>
             </TabsContent>
         <StoryNav
-          nextLink="/work"
+          nextLink="/work.html"
           buttonStyling='mt-32'
         />
           </div>

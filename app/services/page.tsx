@@ -41,7 +41,7 @@ const services:Array<IServices> = [
 const Services = () => {
   return (
     <>
-    <section className='min-h-[80vh] px-10 flex flex-col justify-center py-12 xl:py-0'>
+    <section className='min-h-[80vh] px-10 flex flex-col justify-center py-12'>
       <motion.div initial={{opacity: 0}} animate={{
         opacity: 1,
         transition: {
@@ -66,7 +66,7 @@ const Services = () => {
       
     </section>
     <StoryNav
-      nextLink="/resume"
+      nextLink="/resume.html"
       />
     </>
   );

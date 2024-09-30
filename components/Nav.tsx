@@ -15,19 +15,19 @@ const links: Array<NavLink> = [
   },
   {
     name: 'services',
-    path: '/services'
+    path: '/services.html'
   }
   , {
     name: 'resume',
-    path: '/resume',
+    path: '/resume.html',
   },
   {
     name: 'work',
-    path: '/work'
+    path: '/work.html'
   },
   {
     name: 'contact',
-    path: '/contact'
+    path: '/contact.html'
   }
 
 ]
