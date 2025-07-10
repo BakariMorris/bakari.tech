@@ -30,7 +30,7 @@ interface I_about {
 
 const about: I_about = {
   title: 'About me',
-  description: 'I am a seasoned Full Stack Engineer with 7+ years of experience in designing & developing clean, innovative solutions. By leveraging data-driven strategies, I drive growth not only for myself but also for my teammates, creating a collaborative, high-performing culture.',
+  description: 'I am a seasoned Full Stack Engineer with 8+ years of experience in designing & developing clean, innovative solutions. By leveraging data-driven strategies, I drive growth not only for myself but also for my teammates, creating a collaborative, high-performing culture.',
   info: [
     {
       fieldName: 'Name',
@@ -42,7 +42,7 @@ const about: I_about = {
     },
     {
       fieldName: 'Experience',
-      fieldValue: '7+ years'
+      fieldValue: '8+ years'
     },
     {
       fieldName: 'LinkedIn',

@@ -9,7 +9,7 @@ interface Istats {
 
 const stats: Array<Istats> = [
   {
-    val: 7,
+    val: 8,
     description: 'Years of experience'
   },
   {
