@@ -79,9 +79,9 @@ const experience: I_experience = {
   To me, great UX extends to the services powering the application. I focus on building efficient, blazing fast services, while ensuring that the front-end remains interactive and seamless.`,
   items: [
     {
-      company: 'Intuitive Solutions Network',
-      position: 'Founding Software Engineer',
-      duration: 'June 2023 - Present'
+      company: 'Lagless Hosting',
+      position: 'Founder',
+      duration: 'June 2023 - July 2025'
     },
     {
       company: 'WeWork',
@@ -89,24 +89,29 @@ const experience: I_experience = {
       duration: 'July 2022 - June 2023'
     },
     {
-      company: 'Nike ',
-      position: 'Senior Software Engineer',
+      company: 'Nike',
+      position: 'Senior Software Engineer - Contract',
       duration: 'April 2021 - May 2022'
     },
     {
+      company: 'Invaluable',
+      position: 'Lead Software Engineer - Contract',
+      duration: 'August 2020 - March 2021'
+    },
+    {
       company: 'Aretove Inc.',
-      position: 'Front End Engineer',
-      duration: 'September 2019 - March 2020 '
+      position: 'Full Stack Developer',
+      duration: 'September 2019 - March 2020'
     },
     {
       company: 'Conair Corporation',
-      position: 'Full Stack Engineer',
-      duration: 'September 2018 - June 2019 '
+      position: 'Full Stack Developer',
+      duration: 'September 2018 - June 2019'
     },
     {
       company: 'ILoveKickboxing',
       position: 'Junior Web Developer',
-      duration: 'June 2017 - June 2018 '
+      duration: 'June 2017 - June 2018'
     },
   ]
 }
@@ -131,13 +136,18 @@ const education: I_education = {
   items: [
     {
       institution: 'Western Governors University',
-      degree: 'B.S Software Development',
-      duration: '2021',
+      degree: 'B.S: Software Development',
+      duration: '2018-2021',
     },
     {
-      institution: 'Udemy',
-      degree: 'React, Next.js, Systems Design, UI/UX Design',
-      duration: '2018-2024',
+      institution: 'CompTIA',
+      degree: 'Project +',
+      duration: 'Certified',
+    },
+    {
+      institution: 'CIW',
+      degree: 'Site Development Associate, Advanced HTML5 & CSS3 Specialist',
+      duration: 'Certified',
     },
     {
       institution: 'MIT OpenCourseWare',
@@ -299,7 +309,7 @@ const Resume = () => {
               </div>
             </TabsContent>
         <StoryNav
-          nextLink="/work.html"
+          nextLink="/work"
           buttonStyling='mt-32'
         />
           </div>

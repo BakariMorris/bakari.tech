@@ -144,7 +144,7 @@ const Work = ():ReactNode => {
         </div>
       </div>
     <StoryNav
-    nextLink="/contact.html"
+    nextLink="/contact"
     buttonStyling='lg:mt-32'
     />
     </motion.section>

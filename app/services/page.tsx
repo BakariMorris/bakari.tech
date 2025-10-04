@@ -66,7 +66,7 @@ const Services = () => {
       
     </section>
     <StoryNav
-      nextLink="/resume.html"
+      nextLink="/resume"
       />
     </>
   );

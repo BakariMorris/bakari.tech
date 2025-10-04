@@ -46,7 +46,7 @@ export default function Home() {
     </section>
     
     <StoryNav 
-    nextLink="/services.html"
+    nextLink="/services"
     buttonStyling='lg:mt-32'
   />
   </>
