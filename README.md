@@ -1,1 +1,1 @@
-https://new-portfolio-s-ite.vercel.app/
+Built with Next.js 14, Framer motion animations, story driven navigation, clean separation of concerns with modular component structure. I wanted to show off a few of the animations and projects I've built over the years and tell you a little more about me. Please visit on: https://bakari.tech I look forward to seeing you there!
