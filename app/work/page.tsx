@@ -32,7 +32,7 @@ const projects: Array<I_projects> = [
     category: 'WeWork',
     title: 'project1',
     description: 'I had the awesome opportunity to lead a talented team in revamping our component library, and the results speak for themselves! In just six months, we saw a 13% boost in customer satisfaction. It was a great experience seeing how our improvements made a real difference for users.',
-    image: '/assets/WeWork.png',
+    image: '/assets/WeWork.PNG',
     portfolioLink: 'https://www.wework.com/',
     stack: [
       'Html5, CSS3', 'React', 'TypeScript', 'GCP', 'Kubernetes'
@@ -42,7 +42,7 @@ const projects: Array<I_projects> = [
     category: 'Nike',
     title: 'project1',
     description: `I had the pleasure of optimizing a browser-based 3D rendering engine, which made a real impact! We saw a 15% jump in the 'add to cart' rate for Nike By You products. It was great to see how the improved experience got users more excited to customize and purchase their designs.`,
-    image: '/assets/Nike.png',
+    image: '/assets/Nike.PNG',
     portfolioLink: 'https://www.nike.com/u/custom-nike-air-max-97-shoes-by-you-10001609/1726768359135',
     stack: [
       'Html5', 'CSS3', 'TypeScript', 'AWS', 'Babylon.js', '3D Animation Design'
@@ -52,7 +52,7 @@ const projects: Array<I_projects> = [
     category: 'Aretove',
     title: 'Tommy John',
     description: `I had the pleasure of leading the A/B testing efforts at Tommy John, and the results were amazing! We boosted the 'add to cart' rate by 23%, helping more customers find exactly what they wanted. It was a fun challenge, and seeing that kind of impact made all the hard work worth it!`,
-    image: '/assets/TJ.png',
+    image: '/assets/TJ.PNG',
     portfolioLink: 'https://www.tommyjohn.com/',
     stack: [
       'Html5', 'CSS3', 'React', 'JavaScript', 'Shopify', 'Dynamic Yield'
